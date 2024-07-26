@@ -1,0 +1,814 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: pink;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*header*/
+header{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+}
+header div ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.soporte ul li{
+    padding: 10px;
+    display: flex;
+}
+.soporte ul:last-child{
+    margin-right: 100px;
+}
+.imagenes_link ul li{
+    padding: 10px;
+    display: flex;
+}
+.imagenes_link ul:first-child{
+    margin-left: 100px;
+}
+/*fin de header*/
+/*inicio accesibilidad*/
+#accesibilidad-padre{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#accesibilidad{
+position: fixed;
+z-index: 10;
+left: 0;
+top: 110px;
+}
+.container-accesibilidad{
+width: 90%;
+max-width: 1200px;
+margin: auto;
+}
+.container-accesibilidad .btn-menu{
+float: left;
+line-height:100px;
+}
+.container-accesibilidad .btn-menu label{
+color: #fff;
+font-size: 25px;
+cursor: pointer;
+}
+.capa{
+position: fixed;
+width: 100%;
+height: 100vh;
+z-index: -1;
+top: 0;left: 0;
+}
+#btn-menu{
+display: none;
+}
+.container-menu{
+position: fixed;
+background: rgba(0,0,0,0.5);
+width: 100%;
+height: 100vh;
+top: 0;left: 0;
+transition: all 500ms ease;
+opacity: 0;
+visibility: hidden;
+z-index: 11;
+}
+#btn-menu:checked ~ .container-menu{
+opacity: 1;
+visibility: visible;
+}
+.cont-menu{
+width: 100%;
+max-width: 250px;
+background: lightgoldenrodyellow;
+height: 100vh;
+position: relative;
+transition: all 500ms ease;
+transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+transform: translateX(0%);
+}
+.cont-menu nav{
+transform: translateY(15%);
+}
+.cont-menu nav button{
+display: block;
+text-decoration: none;
+padding: 20px;
+color: black;
+border: 0px;
+border-left: 5px solid transparent;
+transition: all 400ms ease;
+width: 100%;
+background-color: lightgoldenrodyellow;
+text-align: left;
+font-size: 16px;
+}
+.cont-menu nav button:hover{
+border-left: 5px solid coral;
+background: pink;
+color: black;
+cursor: pointer;
+}
+.cont-menu nav p{
+    padding: 20px;
+    margin-left: 10px;
+}
+.cont-menu label{
+position: absolute;
+right: 5px;
+top: 10px;
+color: #fff;
+cursor: pointer;
+font-size: 18px;
+}
+/*fin accesibilidad*/
+/*nav*/
+.header{
+    display:flex;
+    justify-content: space-between;
+    justify-content: center;
+    background-color: lightgoldenrodyellow;
+}
+.navigation{
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
+.navigation li{
+    list-style: none;
+    border: 1px solid black;
+    padding: 20px 10px 10px 10px;
+    border-radius: 25px;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    box-sizing: content-box;
+
+    display: flex;
+    justify-content: center;
+
+}
+.navigation a{
+    text-decoration:none;
+}
+.nav-toggle{
+    display: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent; 
+    background-color: lightgoldenrodyellow;
+    border: 0;
+}
+.navigation li:hover{
+    background-color: pink;
+    cursor: pointer;
+}
+/*fin de nav*/
+/*idiomas*/
+#idiomas{
+    background-color: lightgoldenrodyellow;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+#idiomas h1{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    color: rgb(204, 174, 3);
+}
+#idiomas h2{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    color: rgb(204, 174, 3);
+}
+#idiomas ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+#idiomas ul li{
+    margin: 10px;
+}
+#idiomas ul li a:hover{
+    font-size: 20px;
+}
+/*fin idiomas*/
+/*imagen nav+ofertas*/
+.imagen{
+    display: flex;
+    background-color: lightgoldenrodyellow;
+    justify-content: space-around;
+    align-items: center;
+}
+.imagen img{
+    margin: 20px 0px 20px 0px;
+}
+.oferta{
+    background: url("../imagenes/crepefondo.jpg");
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px black solid;
+    width: 300px;
+    background-color: burlywood;
+}
+.oferta div{
+    background-color:transparent;
+    padding: 5px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.oferta:hover{
+    transform:scale(1.05);
+}
+.oferta div:hover{
+    background-color: yellow;
+}
+.oferta h2{
+    background-color: white;
+    border-radius: 30px;
+}
+.oferta:hover{
+    cursor:context-menu;
+}
+.subrayar_precio{
+    text-decoration: underline;
+}
+#ofertillas{
+    display: none;
+}
+.oferta_titulo{
+    display: none;
+}
+/*fin imagen nav+ofertas*/
+/*inicio barra buscadora*/
+#barra-buscadora{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+}
+#resultado{
+    padding: 10px;
+}
+#searchQuery{
+    margin-right: 5px;
+}
+#searchQuery:focus{
+    background-color: pink;
+}
+#search{
+    padding: 7px;
+}
+#search:focus{
+    background-color:lightcyan;
+}
+/*fin barra buscadora*/
+/*section slider*/
+.deslizador{
+    display: none;
+}
+/*fin section slider*/
+/*section sobre nosotros*/
+.nosotros{
+    display: flex;
+    margin: auto;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+}
+.nosotros h2{
+    text-align: center;
+}
+.nosotros div{
+    border: 2px solid black;
+    box-shadow: 25px 25px 25px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: lightcyan;
+    padding: 20px;
+}
+/*fin section sobre nosotros*/
+/*section productos*/
+section{
+    margin-top: 30px;
+}
+section h2{
+    text-align: center;
+}
+section .girar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*tarjeta giratoria*/
+.giratoria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 2.5s;
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px;
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgb(0,0,0,.4);
+    text-align: center;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3,35,54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+.card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.card .back .link a{
+    color: #f3f3f3;
+}
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.card .back p{
+    letter-spacing: 1px;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+#icono{
+    margin-right: 100px;
+}
+/*fin tarjeta giratoria*/
+/*fin section productos*/
+/*empleados del mes*/
+.emplear h2{
+   padding: 10px;
+}
+/*fin empleados del mes*/
+/*inicio galeria imagenes*/
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+  
+#galeria img {
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    border: 2px solid black;
+}
+  
+#img-activa {
+    width: 100%;
+    height: auto;
+}
+  
+
+#contenedor-principal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.55);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+#contenedor-interno {
+    border: 2px #f3f3f3 solid;
+    padding: 2px;
+    background: #3f3f3f;
+    width: 600px;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+  
+
+.boton-galeria {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+  
+#btn-cierra {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+    color: coral;
+}
+  
+#btn-retrocede {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 3rem;
+    color: coral;
+}
+  
+#btn-adelanta {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 3rem;
+    color: coral;
+}
+/*fin galeria imagenes*/
+/*inicio carta*/
+#contenedor-carta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#contenedor-carta div{
+    margin: 10px;
+    border-radius: 25px;
+    border: 1px solid rgb(0, 0, 0,.4);
+    box-shadow: 0 5px 10px;
+}
+#contenedor-carta div:hover{
+    transform: scale(1.08);
+}
+#contenedor-carta div a{
+    text-decoration: none;
+}
+#contenedor-carta div img{
+    margin: 0;
+    padding: 0;
+    border-radius: 25px 25px 0 0;
+}
+#contenedor-carta div h3{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgb(0,0,0,.4);
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+}
+/*fin carta*/
+/*haz tu reserva*/
+.reservar{
+    margin: auto;  
+}
+/*fin haz tu reserva*/
+/*inicio formulario*/
+.formulario{
+    display: flex;
+    width: 300px;
+    margin: 10px auto;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: 25px 25px 25px;
+    border-radius: 25px;
+}
+.formulario form input{
+    width: 200px;
+    margin: 10px;
+}
+.formulario form button{
+    width: 110px;
+    margin: 20px 10px 10px 10px;
+}
+/*fin formulario*/
+/*inicio contacto*/
+#contenedor-comunicar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    
+}
+#contenedor-comunicar div{
+    margin: 20px 0 0 0;
+    border: 2px solid black;
+    padding: 10px;
+}
+#contenedor-comunicar-secundario-1{
+    background-color: lightcyan;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#contenedor-comunicar-secundario-2{
+    background-color: lightyellow;
+    border-radius: 25px;
+    font-size: 20px;
+}
+/*fin contacto*/
+/*footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 32px;
+}
+footer p{
+    margin: 10px;
+}
+#enlacillo{
+    color: white;
+}
+#enlacillo:hover{
+    color: red;
+}
+/*fin footer*/
+/*apaño*/
+.apaño{
+    text-align: center;
+}
+.apaño2{
+    margin-top: 20px;
+}
+#apaño3{
+    margin-top: 50px;
+}
+/*fin apaño*/
+/*pantalla de carga*/
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    transition: opacity 1s, visibility 1s;
+}
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: lightgoldenrodyellow;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+@keyframes loading{
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+/*fin pantalla de carga*/
+/*títulos*/
+.titulo h2{
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 200px;
+    margin: auto;
+    background-color: bisque;
+    padding: 10px;
+}
+#carta .titulo{
+    margin-bottom: 10px;
+}
+/*fin títulos*/
+/*inicio tamaño letra*/
+.f0 {
+    font-size: 0.8rem;
+  }
+.f1 {
+    font-size: 0.9rem;
+  }
+.f2 {
+    font-size: 1rem;
+  }
+.f3 {
+    font-size: 1.1rem;
+  }
+.f4 {
+    font-size: 1.2rem;
+  }
+/*fin tamaño letra*/
+/*tipo de letra*/
+.franklin{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*fin tipo de letra*/
+a{
+    text-decoration: none;
+}
+#button-up{
+    display: none;
+}
+@media (max-width: 720px){
+    header div ul{
+        display: flex;
+        margin: 0;
+    }
+    header .soporte{
+        position: relative;
+        left: 50px;
+    }
+    header .imagenes_link{
+        position: relative;
+        right: 100px;
+    }
+    .soporte ul{
+        display: flex;
+        padding-left: 40px;
+    }
+    .imagen{
+        display: none;
+    }
+    .nav-toggle{
+        flex: 1;
+        display: block;
+        order: 1;
+    }
+    .navigation{
+        display: none;
+    }
+    .navigation-responsive{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 230px;
+        width: 10 75px;
+        align-items: center;
+        gap: 10px;
+        padding: 15px;
+    }
+    .navigation-responsive li{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aplastar{
+        position: relative;
+        top: 260px;
+    }
+    #contenedor-comunicar{
+        margin-top: 20px;
+        justify-content: center;
+    }
+    #contenedor-comunicar div{
+        border-radius: 25px;
+        
+    }
+    #contenedor-comunicar-secundario-2{
+        padding: 0;
+        width: 350px;
+    }
+    #map{
+        width: 300px;
+        padding: 10px;
+    }
+    footer{
+        font-size: 14px;
+    }
+    .cont-menu{
+        max-width: 160px;
+        height: 430px;
+    }
+    .cont-menu nav p{
+        margin-left: 20px;
+        padding: 0;
+    }
+    /*deslizador*/
+    .deslizador{
+        display: inline;
+    }
+    .slider{
+        overflow: hidden;
+    }
+    .slider--inner{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 400px;
+        transition: all 0.3s ease-in;
+        align-items: center;
+    }
+    .slider--inner img{
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        border: lightgoldenrodyellow 2px solid;
+    }
+    /*fin deslizador*/
+    /*ofertas*/
+    .oferta_titulo{
+        display: inline;
+    }
+    #ofertillas{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .oferta{
+        margin: 10px;
+    }
+    /*fin ofertas*/
+    /*inicio botón ir arriba*/
+    #button-up{
+        width: 50px;
+        height: 50px;
+        background: #46a2fd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 50%;
+        font-size: 20px;
+        position: fixed;
+        bottom: 50px;
+        right: 0px;
+        cursor: pointer;
+        border: 4px solid transparent;
+        transition: all 300ms ease;
+        transform: scale(0);
+    }
+
+    #button-up:hover{
+        transform: scale(1.1);
+        border-color: rgba(0,0,0,0.1);
+    }
+    /*fin botón ir arriba*/
+    #contenedor-interno{
+        width: 400px;
+        height: 400px;
+    }
+}

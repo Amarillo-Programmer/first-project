@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6fd045e5df.js" crossorigin="anonymous"></script>
+    <title>Reserva</title>
+</head>
+<body>
+    <header>
+        <div class="soporte">
+        <ul>
+            <li><img src="imagenes/logo_web_sinfondo_recortado.png" alt="Logo" width="90px" height="70px"></li>
+        </ul>
+        </div>
+        <div class="imagenes_link">
+        <ul>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="imagenes/instagramlogo.png" alt="instagram" width="30px" height="30px"></a></li>
+            <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="imagenes/twitterlogo.png" alt="X" width="30px" height="30px"></a></li>
+            <li><a href="https://www.facebook.com/?locale=es_ES" target="_blank"><img src="imagenes/facebooklogo.png" alt="facebook" width="30px" height="30px"></a></li>
+        </ul>
+        </div>
+    </header>
+    <div class="accesibilidad-padre">
+        <div class="container-accesibilidad">
+            <div class="btn-menu">
+                
+                <label for="btn-menu"><img id="accesibilidad" src="imagenes/accesibilidad.png" alt="accesibilidad" width="50px" height="50px"></label>
+            </div>
+        </div>
+        <div class="capa"></div>
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <p><strong>Herramientas de accesibilidad</strong></p>
+                    <button id="aumentar">Aumentar letra</button>
+                    <button id="disminuir">Disminuir letra</button>
+                    <button id="fuente">Fuente legible</button>
+                    <button id="subrayar">Subrayar enlaces</button>
+                    <button id="restablecer">Restablecer</button>
+                </nav>
+                <label for="btn-menu">✖️</label>
+            </div>
+        </div>
+    </div>
+    <div id="idiomas">
+        <h1 id="logo_letra"></h1>
+        <h2 id="letra2"></h2>
+        <ul>
+            <li><a href="reserva.html">Español</a></li>
+            <li><a href="reserva_english.html">Inglés</a></li>
+        </ul>
+    </div>
+    <nav>
+        <div class="container header">
+            <button class="nav-toggle hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="navigation">
+                <a href="index.html"><li class="i"></li></a>
+                <a href="nosotros.html#nosotros"><li class="s"></li></a>
+                <a href="productos.html#productos"><li class="p"></li></a>
+                <a href="reserva.html#reserva"><li class="r"></li></a>
+            </ul>
+            </div>
+    </nav>
+    <div class="imagen">
+        <img src="imagenes/Logo_página_web_sin_fondo.png" alt="logo" width="300px" height="300px">
+    </div>
+
+    <div class="barra-buscadora-padre">   
+        <div id="barra-buscadora">
+            <input type="text" id="searchQuery" placeholder="Buscar...">
+            <button id="search">Buscar</button>
+        </div>
+        <div id="resultado"></div>
+    </div>
+    
+    <div class="titulo apaño2" id="reserva">
+        <h2 class="apaño">¡HAZ TU RESERVA!</h2>
+    </div>
+    <section class="formulario">
+        <form>
+            <label for="nombre">Nombre</label>
+            <br>
+            <input type="text" name="nombre" id="nombre" placeholder="Introduzca su nombre" required>
+            <br>
+            <label for="telefono">Teléfono</label>
+            <br>
+            <input type="tel" name="telefono" id="telefono" placeholder="Introduzca su teléfono" required>
+            <br>
+            <label for="correo">Email</label>
+            <br>
+            <input type="email" name="correo" id="correo" placeholder="Introduzca su email" required>
+            <br>
+            <label for="fecha">Fecha</label>
+            <br>
+            <input type="date" name="fecha" id="fecha" required>
+            <br>
+            <label for="personas">Comensales</label>
+            <br>
+            <input type="number" name="personas" id="personas" placeholder="Introduzca los comensales" required>
+            <br>
+            <button type="reset" id="reiniciar">Reiniciar datos</button>
+            <button type="submit" id="reservar">Reservar</button>
+        </form>
+    </section>
+    <section id="apaño3">
+        <div class="titulo">
+            <h2>COMUNÍCATE CON NOSOTROS</h2>
+        </div>
+        <div id="contenedor-comunicar">
+            <div id="contenedor-comunicar-secundario-1">
+                <h3>Número de teléfono</h3>
+                <p>+34 123 12 34 56</p>
+            </div>
+            <div id="contenedor-comunicar-secundario-2">
+                <h3>Dónde localizarnos</h3>
+                <p>Alicante, Calle Pablo Iglesias</p>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.0673752335783!2d-0.4880812889636266!3d38.34742259815634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd623652ab4926c1%3A0x85d995773c02e12a!2sEstructura%20Celular!5e0!3m2!1ses!2ses!4v1718200527807!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <div id="button-up">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+    <footer class="footer">
+        <p>©Pablo Ruiz Orts</p>
+        <p>Política de privacidad: <a id="enlacillo" href="DOCS/cláusula_rgpd.pdf" target="_blank"> cláusula</a></p>
+    </footer>
+    <div class="loader"></div>
+    <script src="js/reserva.js"></script>
+    <script defer src="js/hamburguesa_reserva.js"></script>
+    <script src="js/texto_animado.js"></script>
+    <script src="js/pantalla_carga.js"></script>
+    <script src="js/buscador.js"></script>
+    <script src="js/accesibilidad.js"></script>
+</body>
+</html>

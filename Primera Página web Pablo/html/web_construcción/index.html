@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6fd045e5df.js" crossorigin="anonymous"></script>
+    <title>Index</title>
+</head>
+<body>
+    <header>
+        <div class="soporte">
+            <ul>
+                <li><img src="imagenes/logo_web_sinfondo_recortado.png" alt="Logo" width="90px" height="70px"></li>
+            </ul>
+        </div>
+        <div class="imagenes_link">
+        <ul>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="imagenes/instagramlogo.png" alt="instagram" width="30px" height="30px"></a></li>
+            <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="imagenes/twitterlogo.png" alt="X" width="30px" height="30px"></a></li>
+            <li><a href="https://www.facebook.com/?locale=es_ES" target="_blank"><img src="imagenes/facebooklogo.png" alt="facebook" width="30px" height="30px"></a></li>
+        </ul>
+        </div>
+    </header>
+    <div id="idiomas">
+        <h1 id="logo_letra"></h1>
+        <h2 id="letra2"></h2>
+        <ul>
+            <li><a href="index.html">Español</a></li>
+            <li><a href="index_english.html">Inglés</a></li>
+        </ul>
+    </div>
+    <div class="accesibilidad-padre">
+        <div class="container-accesibilidad">
+            <div class="btn-menu">
+                
+                <label for="btn-menu"><img id="accesibilidad" src="imagenes/accesibilidad.png" alt="accesibilidad" width="50px" height="50px"></label>
+            </div>
+        </div>
+        <div class="capa"></div>
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <p><strong>Herramientas de accesibilidad</strong></p>
+                    <button id="aumentar">Aumentar letra</button>
+                    <button id="disminuir">Disminuir letra</button>
+                    <button id="fuente">Fuente legible</button>
+                    <button id="subrayar">Subrayar enlaces</button>
+                    <button id="restablecer">Restablecer</button>
+                </nav>
+                <label for="btn-menu">✖️</label>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container header">
+        <button class="nav-toggle hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="navigation">
+            <a href="index.html"><li class="i"></li></a>
+            <a href="nosotros.html#nosotros"><li class="s"></li></a>
+            <a href="productos.html#productos"><li class="p"></li></a>
+            <a href="reserva.html#reserva"><li class="r"></li></a>
+        </ul>
+        </div>
+    </nav>
+    
+    <div class="imagen">
+        <div class="oferta oferta-1">
+            <h2>Oferta medio día</h2>
+            <div>
+            <p>Bebida</p>
+            <p>Crepe, gofre o tortitas</p>
+            <p>Postre</p>
+            <p class="subrayar_precio">5€</p>
+            </div>
+        </div>
+        <img src="imagenes/Logo_página_web_sin_fondo.png" alt="logo" width="300px" height="300px">
+        <div class="oferta oferta-2">
+            <h2>Oferta fin de semana</h2>
+            <div>
+            <p>Bebida</p>
+            <p>Crepe + gofre o tortitas</p>
+            <p>Postre</p>
+            <p class="subrayar_precio">5€</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="barra-buscadora-padre">   
+        <div id="barra-buscadora">
+            <input type="text" id="searchQuery" placeholder="Buscar...">
+            <button id="search">Buscar</button>
+        </div>
+        <div id="resultado"></div>
+    </div>
+
+    <section class="deslizador">
+        <div class="slider">
+        <div class="slider--inner">
+            <img src="imagenes/crepe2.jpg" alt="crepe fresoso">
+            <img src="imagenes/crepe9.jpg" alt="crepe meloso">
+            <img src="imagenes/gofres-3.jpg" alt="gofre helado">
+            <img src="imagenes/gofres-4.jpg" alt="gofre de espinacas">
+            <img src="imagenes/tortita-3.jpg" alt="tortitas día del padre">
+        </div>
+        </div>
+    </section>
+    
+    <section class="nosotros">
+        <div>
+            <h2>¡Crepes y más!</h2>
+            <p>Deliciosos crepes hechos con nuestra única y secreta receta.</p>
+            <p>Además, vendemos otros tipos de productos si es que los crepes no son de tu agrado.</p>
+        </div>
+    </section>
+    <section>
+        <div class="titulo">
+            <h2>PRODUCTOS &nbsp;ESTRELLA</h2>
+        </div>
+        <div class="girar">
+            <div class="giratoria">
+                <div class="card">
+                    <div class="face front">
+                        <img src="imagenes/crepe9.jpg" alt="Crepe meloso">
+                        <h3>Crepe meloso</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Crepe meloso</h3>
+                        <p>Crepe con mermelada y trocitos de almendra</p>
+                        <div class="link">
+                            <a href="#">4€</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="giratoria">
+                <div class="card">
+                    <div class="face front">
+                        <img src="imagenes/crepe5.jpg" alt="Crepe saludable">
+                        <h3>Crepe saludable</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Crepe saludable</h3>
+                        <p>Crepe con fresas, plátano y chocolate</p>
+                        <div class="link">
+                            <a href="#">4€</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="giratoria">
+                <div class="card">
+                    <div class="face front">
+                        <img src="imagenes/crepe7.jpg" alt="Crepe italiano">
+                        <h3>Crepe italiano</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Crepe italiano</h3>
+                        <p>Crepe con chocolate y nata</p>
+                        <div class="link">
+                            <a href="#">4€</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section id="ofertas_section">
+        <div class="titulo oferta_titulo">
+            <h2>OFERTAS</h2>
+        </div>
+        <div id="ofertillas">
+        <div class="oferta oferta-1">
+            <h2>Oferta medio día</h2>
+            <div>
+            <p>Bebida</p>
+            <p>Crepe, gofre o tortitas</p>
+            <p>Postre</p>
+            <p class="subrayar_precio">5€</p>
+            </div>
+        </div>
+        <div class="oferta oferta-2">
+            <h2>Oferta fin de semana</h2>
+            <div>
+            <p>Bebida</p>
+            <p>Crepe + gofre o tortitas</p>
+            <p>Postre</p>
+            <p class="subrayar_precio">5€</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div id="button-up">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+    <footer class="footer">
+        <p>©Pablo Ruiz Orts</p>
+        <p>Política de privacidad: <a id="enlacillo" href="DOCS/cláusula_rgpd.pdf" target="_blank"> cláusula</a></p>
+    </footer>
+    <div class="loader"></div>
+    <script defer src="js/hamburguesa_index.js"></script>
+    <script src="js/texto_animado.js"></script>
+    <script src="js/pantalla_carga.js"></script>
+    <script src="js/buscador.js"></script>
+    <script src="js/accesibilidad.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
